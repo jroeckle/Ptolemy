@@ -1,0 +1,34 @@
+[
+	{
+		"title" : "New Moon",
+		"description" : "The 'dark' side of the moon is facing the Earth durning the New Moon lunar phase.  The Moon is only visible durning this phase durning a solar eclipse."
+	},
+	{
+		"title" : "Waxing Crescent",
+		"description" : "Less than half of the Moon is visible.  As the Moon enters the Waxing Crescent phase, the amount of direct sunlight illuminating its surface is increasing."
+	},
+	{
+		"title" : "First Quarter",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada sem a lacinia pulvinar. In quis nulla sit amet nisl eleifend accumsan ac a mi. Nullam ultricies dapibus enim pellentesque luctus."
+	},
+	{
+		"title" : "Waxing Gibbous",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada sem a lacinia pulvinar. In quis nulla sit amet nisl eleifend accumsan ac a mi. Nullam ultricies dapibus enim pellentesque luctus."
+	},
+	{
+		"title" : "Full Moon",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada sem a lacinia pulvinar. In quis nulla sit amet nisl eleifend accumsan ac a mi. Nullam ultricies dapibus enim pellentesque luctus."
+	},
+	{
+		"title" : "Waning Gibbous",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada sem a lacinia pulvinar. In quis nulla sit amet nisl eleifend accumsan ac a mi. Nullam ultricies dapibus enim pellentesque luctus."
+	},
+	{
+		"title" : "Third Quarter",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada sem a lacinia pulvinar. In quis nulla sit amet nisl eleifend accumsan ac a mi. Nullam ultricies dapibus enim pellentesque luctus."
+	},
+	{
+		"title" : "Waning Crescent",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada sem a lacinia pulvinar. In quis nulla sit amet nisl eleifend accumsan ac a mi. Nullam ultricies dapibus enim pellentesque luctus."
+	}
+]

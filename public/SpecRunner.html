@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <title>Jasmine Spec Runner</title>
+    <link rel="shortcut icon" type="image/png" href="js/libs/jasmine/jasmine_favicon.png">
+    <link rel="stylesheet" type="text/css" href="js/libs/jasmine/lib/jasmine-core/jasmine.css">
+
+    <script src="js/libs/modernizr/modernizr.js"></script>
+
+    <script type="text/javascript" src="js/libs/jasmine/lib/jasmine-core/jasmine.js"></script>
+    <script type="text/javascript" src="js/libs/jasmine/lib/jasmine-core/jasmine-html.js"></script>
+
+    <script type="text/javascript" src="js/libs/requirejs/require.js" data-main="js/app/config/GlobalConfig.js"></script>
+
+</head>
+<body>
+<script>
+    // Add your Jasmine spec files here
+    require(["../../libs/jasmine/lib/jasmine-core/boot"], function () {
+
+        require(["../test/specs/spec"], function(spec) {
+            // Initialize the HTML Reporter and execute the environment (setup by `boot.js`)
+            window.onload();
+        });
+
+    });
+</script>
+
+<div id="container"></div>
+</body>
+</html>

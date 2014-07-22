@@ -1,0 +1,52 @@
+/* ==========================================================================
+  
+jQuery MMenu Files
+
+	1. Imports
+	2. Overrides
+
+========================================================================== */
+
+/* ==========================================================================
+
+	1. Imports
+
+========================================================================== */
+
+
+@import "mmenu/jquery.mmenu";
+@import "mmenu/extensions/jquery.mmenu.iconbar";
+
+
+
+/* ==========================================================================
+
+	2. Overrides
+
+========================================================================== */
+
+.mm-page, .mm-fixed-top, .mm-fixed-bottom {
+	left: 150px;
+	margin-right: 150px;
+}		
+
+@media #{$portrait} {
+
+	@media #{$small-only} {
+
+		.mm-page, .mm-fixed-top, .mm-fixed-bottom {
+			left: 0;
+			margin-right: 0;
+		}
+
+	}
+
+}
+
+.mm-list>li:not(.mm-subtitle):not(.mm-label):not(.mm-search):not(.mm-noresults):after {
+	border-bottom-width : 0;
+}
+
+html.mm-opened .mm-page {
+	box-shadow : none;
+}

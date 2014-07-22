@@ -1,0 +1,52 @@
+/* ==========================================================================
+  
+PTOLEMY STYLE GUIDE SETTINGS
+
+
+	1. Colors
+	2. Typefaces/Fonts
+
+========================================================================== */
+
+
+/* ==========================================================================
+
+	1. Colors
+
+========================================================================== */
+
+$errorRed    : #f85b5b;
+$lightGrey   : #dfdfe2;
+$grey        : #d2d2d6;
+$darkGrey    : #afafb4;
+$darkestGrey : #818181;
+$bgColor     : #28272a;
+$colorAccent : #e2ca89;
+
+/* ==========================================================================
+
+	2. Typefaces/Fonts
+
+========================================================================== */
+
+
+$title-font    : 'Montserrat', sans-serif;
+$subtitle-font : 'Fira Sans', Helvetica, sans-serif;
+$copy-font     : 'PT Sans', sans-serif;
+
+@mixin titleElement() {
+	font-family    : $title-font;
+	text-transform : uppercase;
+	color          : $lightGrey;
+}
+
+@mixin subtitleElement() {
+	font-family : $subtitle-font;
+	font-style  : italic;
+	color       : #6b6b6b;
+}
+
+@mixin copyElement() {
+	font-family : $copy-font;
+	color       : #2d2d2d;
+}

@@ -1,0 +1,95 @@
+/* ==========================================================================
+  
+PTOLEMY COMMON AND GLOBAL ELEMENTS
+
+
+	1. Body
+	2. Typography
+	3. Cards
+	4. Animations
+
+========================================================================== */
+
+/* ==========================================================================
+
+	1. Body
+
+========================================================================== */
+
+body {
+	background: url('../img/patterns/darkstardust.gif') $bgColor;
+	-webkit-animation-duration: 50s;
+	-webkit-animation-name: loopBackgroundPosition;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+body .wrapper {
+	height: 100%;
+
+	//transition: width 600ms ease-out;
+	overflow: hidden;
+	overflow-y: scroll;
+  	-webkit-overflow-scrolling: touch;
+}
+
+
+/* ==========================================================================
+
+	2. Typography
+
+========================================================================== */
+
+h1 {
+	font-family: $title-font;
+}
+
+
+/* ==========================================================================
+
+	3. Cards
+
+========================================================================== */
+
+.card {
+	background-color: $lightGrey;
+	padding: rem-calc(25);
+	transition: padding 300ms ease-out;
+	@media #{$medium-up} { 
+		padding: rem-calc(120) rem-calc(50) rem-calc(50);
+	}
+}
+
+.card > .title {
+	@include titleElement();
+	font-size: rem-calc(48);
+}
+
+.card > .subheader {
+	@include subtitleElement();
+	margin-bottom: 0;
+}
+
+.card > article p {
+	@include copyElement();
+}
+
+.card > hr {
+	border-color: $darkGrey;
+}
+
+/* ==========================================================================
+
+	4. Animations
+
+========================================================================== */
+
+@-webkit-keyframes loopBackgroundPosition {
+	from {
+		background-position: 0 0;
+	}
+
+	to {
+		background-position:-798px -798px;	
+	}
+}

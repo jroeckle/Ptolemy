@@ -1,0 +1,79 @@
+/* ==========================================================================
+  
+PTOLEMY Side Nav Styles
+
+
+	1. Base Header
+	2. List
+	3. Hamburger Icon
+
+========================================================================== */
+
+/* ==========================================================================
+
+	1. Base Header
+
+========================================================================== */
+
+nav.slide-menu {
+	@include Opacity(0);
+	@include transition(opacity, 0.2s, ease-in-out);
+	background-color : #e2ca89;
+}
+
+nav.slide-menu.loaded {
+	@include Opacity(1);
+}
+
+
+/* ==========================================================================
+
+	2. List
+
+========================================================================== */
+
+.slide-menu .nav-list {
+	@include Opacity(0);
+	@include transition(all, 0.2s, ease-in-out);
+	-webkit-transform : translate(-35px, 0);
+}
+
+.nav-wrapper.opened .nav-list {
+	@include Opacity(1);
+	-webkit-transform : translate(0, 0);
+}
+
+.slide-menu .nav-list a {
+	@include subtitleElement();
+	text-align  : center;
+	// color       : $bgColor;
+	font-size   : rem-calc(44);
+	padding     : 0.5em rem-calc(10) 0.5em rem-calc(20);
+	-webkit-transform : translate( 0, 35px );
+	@include transition(-webkit-transform, 0.2s, ease-in-out);
+}
+
+.nav-wrapper.opened .nav-list a {
+	-webkit-transform : translate( 0, 0 );
+}
+
+.slide-menu .nav-list > li:after {
+	border-color : $darkestGrey;
+}
+
+
+/* ==========================================================================
+
+	3. Hamburger Icon
+
+========================================================================== */
+
+.nav-icon {
+	width        : rem-calc(100);
+	padding-left : rem-calc(35);
+	@include transition(padding-left, 0.2s, ease-in-out);
+}
+
+.nav-wrapper.opened .nav-icon {
+	padding-left : rem-calc(0);
+}

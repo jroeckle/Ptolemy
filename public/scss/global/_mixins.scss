@@ -1,0 +1,38 @@
+/* ==========================================================================
+  
+PTOLEMY scss mixins
+
+
+	1. CSS3 Mixins
+
+========================================================================== */
+
+/* ==========================================================================
+
+	1. CSS3 Mixins
+
+========================================================================== */
+
+
+@mixin Opacity($value){
+	$IEValue: $value*100;
+	opacity: $value;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+	filter: alpha(opacity=$IEValue);
+}
+
+@mixin transition($properties: all, $duration: .3s, $easing: ease-out) {
+	@if length($properties) > 1 {
+		transition-property: $properties;
+		transition-duration: $duration;
+		transition-timing-function: $easing;
+	} @else {
+		transition: $properties $duration $easing;
+	}
+}
+
+@mixin transform($value) {
+	-ms-transform: $value;
+	-webkit-transform: $value;
+	transform: $value;
+}

@@ -1,0 +1,39 @@
+/* ==========================================================================
+  
+PTOLEMY Header Styles
+
+
+	1. Base Header
+	2. Typography
+
+========================================================================== */
+
+/* ==========================================================================
+
+	1. Base Header
+
+========================================================================== */
+
+header {
+	width            : 100%;
+	padding          : rem-calc(45) 0 0;
+	background-color : $bgColor;
+
+	z-index : 999;
+}
+
+header .logo > .title {
+	font-family   : $title-font;
+	color         : $lightGrey;
+	margin-bottom : 0;
+	font-size     : rem-calc(60);
+}
+
+header .logo > .subtitle {
+	font-size : rem-calc(28);
+	@include subtitleElement();
+}
+
+header .nav-icon {
+	background-color : $colorAccent;
+}
